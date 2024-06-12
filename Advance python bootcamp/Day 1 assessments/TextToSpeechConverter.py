@@ -1,4 +1,8 @@
+'''
+to install pyttsx3
+run command : pip install pyttsx3
 
+'''
 
 import pyttsx3
 

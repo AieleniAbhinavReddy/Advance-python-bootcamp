@@ -9,7 +9,6 @@ while True :
         guess = int(input('Enter guess number : '))
         trials += 1
         if guess == number :
-            # print(f'You guessed it correct in { trials } trials.')
             break
         elif guess > number :
             print('Try lower number !')

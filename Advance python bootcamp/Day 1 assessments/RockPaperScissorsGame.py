@@ -1,7 +1,37 @@
 import random
 
-choices = ('rock','paper','scissor')
+# rock = '''      _______
+#             ---'   ____)
+#                   (_____)
+#                   (_____)
+#                   (____)
+#             ---.__(___)
+# '''
+# paper = '''
 
+#                  _______
+#             ---'    ____)____
+#                        ______)
+#                       _______)
+#                      _______)
+#             ---.__________)
+# '''
+# scissor = '''
+
+#                 _______
+#             ---'   ____)____
+#                       ______)
+#                    __________)
+#                   (____)
+#             ---.__(___)
+# '''
+# symbols = {
+#     'rock' : rock ,
+#     'paper' : paper ,
+#     'scissor' : scissor
+# }
+
+choices = ('rock','paper','scissor')
 while True :
     player = input('Enter your choice : ')
     computer = random.choice(choices)

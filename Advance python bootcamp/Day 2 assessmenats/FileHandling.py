@@ -4,3 +4,4 @@ i = 1
 for data in file :
     print(i,') :',data)
     i+=1
+file.close()

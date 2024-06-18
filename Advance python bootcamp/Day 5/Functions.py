@@ -54,3 +54,20 @@ data = [1,2,3,4,5]
 res = reduce(sumOfElements,data)
 print(res)
 '''
+#-------------------------------------------------------------------------------------------------------
+'''
+#sorting the 2d array based on the last element using lambda functions 
+arr = [
+    [1,2,3,4,5],
+    [2,3,4,5,1],
+    [3,4,5,1,2],
+    [5,1,2,3,4],
+    [4,5,1,2,3]
+]
+arr.sort(key=lambda ele:ele[-1])
+print(*arr,sep="\n")
+'''
+#--------------------------------------------------------------------------------------------------------
+#lambda functions
+#syntax : var = lambda arguments : returningValue
+#example : add = lambda a,b : a+b

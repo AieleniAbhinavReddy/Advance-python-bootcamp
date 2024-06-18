@@ -1,0 +1,3 @@
+welcome to example.txt file
+my name is bhasker
+Im fine,how are you ?

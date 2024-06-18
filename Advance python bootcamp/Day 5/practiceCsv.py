@@ -4,11 +4,13 @@ file = open('data.csv','w')
 
 datawrite=csv.writer(file)
 
-header = ['name','roll']
+
 body = [
+    ['name','roll']
     ['abhinav','0503'],
     ['bhanu teja','051A']
 ]
-datawrite.writerow(header)
+
 datawrite.writerows(body)
+
 file.close()

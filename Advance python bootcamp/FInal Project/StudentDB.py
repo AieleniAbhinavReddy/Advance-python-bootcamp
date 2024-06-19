@@ -1,3 +1,81 @@
+import csv
+
+class Faculty :
+    def __init__(self) :
+        file = open('data.csv','r')
+        self.dbReader = csv.reader(file)
+    def addStudent(self) :
+        fp = open('data.csv','a')
+        dbWriter = csv.writer(fp)
+        name = '\nbhanuteja'
+        email = '1A'
+        roll = '1A@gmail.com'
+        details = [name,email,roll]
+        dbWriter.writerow(details)
+
+    def addStudents() :
+        pass
+    def updateStudent() :
+        pass
+    def getStudentDetails() :
+        pass
+    def displayStudentDetails() :
+        pass
+fac = Faculty()
+fac.addStudent()
+class Student :
+    def __init__(self,rollnumber) :
+        self.rollnumber = rollnumber
+        file = open('data.csv','r')
+        self.dbReader = csv.reader(file)
+    def displayMyDetails(self) :
+        def filterRoll(ele) :
+            if ele[2] == self.rollnumber :
+                return ele
+        myDetails = list(filter(filterRoll,list(self.dbReader)))
+        print(myDetails)
+
+# stu = Student('503')
+# stu.displayMyDetails()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
 project : student database ( using json or csv )
 

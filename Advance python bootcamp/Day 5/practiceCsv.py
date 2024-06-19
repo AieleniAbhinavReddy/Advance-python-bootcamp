@@ -4,7 +4,6 @@ file = open('data.csv','w')
 
 datawrite=csv.writer(file)
 
-
 body = [
     ['name','roll'],
     ['abhinav','0503'],
